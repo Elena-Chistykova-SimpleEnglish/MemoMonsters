@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <title>Memory Monsters — Охота за парами</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20260813-2">
 </head>
 <body>
   <div class="doodle d1">✦</div><div class="doodle d2">○</div><div class="doodle d3">⌁</div>
@@ -29,7 +29,7 @@
     </section>
 
     <section id="game" class="screen">
-      <header class="game-head"><div class="game-logo"><b>MEMORY</b><i>MONSTERS</i></div><div></div><div class="tools"><button class="icon-btn" data-modal="rules" aria-label="Правила">?</button><div class="music-control"><button id="soundBtn" class="icon-btn" aria-label="Настройки звука">♫</button><div class="volume-pop"><label for="musicVolume"><span>♫</span> Музыка</label><input id="musicVolume" type="range" min="0" max="100" value="24"><label for="sfxVolume"><span>✦</span> Звуки игры</label><input id="sfxVolume" type="range" min="0" max="100" value="65"></div></div><button id="restartBtn" class="icon-btn">↻</button><button id="exitBtn" class="icon-btn">×</button></div></header>
+      <header class="game-head"><div class="game-logo"><b>MEMORY</b><i>MONSTERS</i></div><div></div><div class="tools"><button id="fullscreenBtn" class="icon-btn fullscreen-btn" aria-label="На весь экран" title="На весь экран">⛶</button><button class="icon-btn" data-modal="rules" aria-label="Правила">?</button><div class="music-control"><button id="soundBtn" class="icon-btn" aria-label="Настройки звука">♫</button><div class="volume-pop"><label for="musicVolume"><span>♫</span> Музыка</label><input id="musicVolume" type="range" min="0" max="100" value="24"><label for="sfxVolume"><span>✦</span> Звуки игры</label><input id="sfxVolume" type="range" min="0" max="100" value="65"></div></div><button id="restartBtn" class="icon-btn">↻</button><button id="exitBtn" class="icon-btn">×</button></div></header>
       <div class="special-dock"><div class="special-heading"><small>МАГИЧЕСКАЯ ПОЛКА</small><b>Особые карты</b></div><div id="specialSlots"><span data-label="Мегарэмза">М</span><span data-label="КактуРем">К</span></div></div>
       <div class="game-layout"><aside id="playersLeft" class="players"></aside><div class="board-column"><div id="board" class="board" aria-label="Игровое поле"></div><div class="turn-panel"><b id="turnText">Ход игрока</b><strong id="soloTimer" hidden>00:00</strong></div></div><aside id="playersRight" class="players"></aside><aside id="soloPanel" class="solo-panel"><div class="timer-monster"><img src="assets/avatars/solo-timer-monster.png" alt="Весёлый монстр-таймер"><div class="timer-belly"><small>ВРЕМЯ ОХОТЫ</small><strong id="soloSideTimer">00:00</strong><b id="soloPlayerName">Матвей</b><em>Найди всех!</em></div></div></aside></div>
     </section>
@@ -40,6 +40,6 @@
   <div id="confetti"></div>
   <div id="rotatePrompt"><div class="rotate-phone">↻</div><b>Поверни устройство</b><span>Монстрики лучше играют горизонтально!</span></div>
   <audio id="bgMusic" src="assets/audio/public_music_2.mp3" loop preload="auto"></audio>
-  <script src="js/game.js"></script>
+  <script src="js/game.js?v=20260813-2"></script>
 </body>
 </html>
